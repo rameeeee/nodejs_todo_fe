@@ -8,7 +8,8 @@ const TodoItem = ({item, deleteItem, toggleComplete}) => {
       <Col xs={12}>
         <div className={`todo-item`}>
           <div className="todo-content">{item.task}</div>
-
+          {item.author && <div>by {item.author.name}</div>}
+          
           <div>
             <button className="button-delete" onClick={()=> deleteItem(item._id)}>삭제</button>
             <button className="button-delete" onClick={()=> toggleComplete(item._id)}>{
