@@ -95,3 +95,8 @@ button{
 .red-error {
   color: red
 }
+
+.btn_logout {
+  border: 0;
+  outline: 0;
+}
